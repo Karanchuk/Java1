@@ -23,8 +23,6 @@ public class Cat {
     }
 
     public void eat(Plate p) {
-        if (p.decreaseFood(appetite)) {
-            satiety = true;
-        }
+        satiety = p.decreaseFood(appetite);
     }
 }
